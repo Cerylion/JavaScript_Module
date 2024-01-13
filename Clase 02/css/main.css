@@ -1,0 +1,39 @@
+.coolButton {
+  transition: all 400ms ease-in-out;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.coolButton:hover {
+  background-color: #5d85a0;
+  transform: scale(1.2);
+}
+
+body {
+  width: 100%;
+  background-color: gainsboro;
+}
+body .omegaWrapper {
+  padding-top: 60px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+body .omegaWrapper .stuffOnTop {
+  align-content: center;
+  display: flex;
+}
+body .omegaWrapper .theWrapper {
+  align-content: center;
+}
+body .omegaWrapper .theWrapper .Excercise {
+  text-align: center;
+}
+body .omegaWrapper .resultWrapper {
+  align-content: center;
+}/*# sourceMappingURL=main.css.map */
