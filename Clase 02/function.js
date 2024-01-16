@@ -132,3 +132,39 @@ console.log(generar_caracteres(5, 'g'));
 console.log(generar_caracteres('b', 7));
 
  */
+
+/// revisar si es o no palindrome - y quitar espacios de un string
+
+const checkPalindrome = () => {
+  let word = '';
+  let wordReverse = '';
+  let wordOne = '';
+  let oneWord = '';
+  let arrayReverse = '';
+
+  word = document.getElementById('palindrome').value;
+  oneWord = word.toLowerCase().split(' ').forEach(element => {
+    wordOne += element; /// oneWord quita los espacios de los strings
+  })
+  arrayReverse = wordOne.split('').reverse().forEach(element => {
+    wordReverse += element;
+  })
+  if (wordReverse == wordOne) {
+  return document.getElementById("palinResult").innerHTML = `${word} is a Palindrome`;
+  } else {
+  return document.getElementById("palinResult").innerHTML = `${word} is definitely NOT a Palindrome`;
+  }
+}
+
+
+/// Space Destroyer
+
+const destroySpaces = () => {
+  let result = '';
+  let phrase = document.getElementById("longPhrase").value;
+
+  let noSpaces = phrase.split(' ').forEach(word => {
+    result += word;
+  })
+  return document.getElementById("noSpaceResult").innerHTML = result;
+}
