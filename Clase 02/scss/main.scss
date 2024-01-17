@@ -1,43 +1,41 @@
-.coolButton {
+body {
+  width: 100%;
+  background-color: gainsboro;
+  .omegaWrapper {
+    padding-top: 60px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .stuffOnTop {
+      //outline: solid green;
+      align-content: center;
+      display: flex;
+    }
+    .theWrapper {
+      //outline: solid red;
+      align-content: center;
+      .Excercise {
+        //outline: solid gray;
+        text-align: center;
+      }
+    }
+    .resultWrapper {
+      //outline: solid blue;
+      align-content: center;
+    }
+  }
+  .coolButton {
     transition:all 400ms ease-in-out;
     margin: auto;
     display: flex;
     align-items: center;
     border-radius: 7px;
     padding: 10px;
-}
-.coolButton:hover {
-    background-color: #5d85a0;
-    transform: scale(1.2);
-}
-
-body {
-  width: 100%;
-  background-color: gainsboro;
-  .omegaWrapper {
-      padding-top: 60px;
-      width: 100%;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      .stuffOnTop {
-        //outline: solid green;
-        align-content: center;
-        display: flex;
-
-      }
-      .theWrapper {
-        //outline: solid red;
-        align-content: center;
-        .Excercise {
-          //outline: solid gray;
-          text-align: center;
-        }
-      }
-      .resultWrapper {
-        //outline: solid blue;
-        align-content: center;
-      }
+    &:hover {
+      background-color: #5d85a0;
+      transform: scale(1.2);
+    }
   }
 }

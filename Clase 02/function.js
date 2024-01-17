@@ -136,11 +136,12 @@ console.log(generar_caracteres('b', 7));
 /// revisar si es o no palindrome - y quitar espacios de un string
 
 const checkPalindrome = () => {
+  let arrayReverse = '';
+  let oneWord = '';
   let word = '';
   let wordReverse = '';
   let wordOne = '';
-  let oneWord = '';
-  let arrayReverse = '';
+
 
   word = document.getElementById('palindrome').value;
   oneWord = word.toLowerCase().split(' ').forEach(element => {
@@ -149,11 +150,9 @@ const checkPalindrome = () => {
   arrayReverse = wordOne.split('').reverse().forEach(element => {
     wordReverse += element;
   })
-  if (wordReverse == wordOne) {
+  if (wordReverse == wordOne)
   return document.getElementById("palinResult").innerHTML = `${word} is a Palindrome`;
-  } else {
   return document.getElementById("palinResult").innerHTML = `${word} is definitely NOT a Palindrome`;
-  }
 }
 
 
@@ -161,10 +160,46 @@ const checkPalindrome = () => {
 
 const destroySpaces = () => {
   let result = '';
-  let phrase = document.getElementById("longPhrase").value;
-
-  let noSpaces = phrase.split(' ').forEach(word => {
+  let noSpaces = document.getElementById("longPhrase").value.split(' ').forEach(word => {
     result += word;
   })
   return document.getElementById("noSpaceResult").innerHTML = result;
 }
+
+
+/* /// contador con while
+
+let counter = 0;
+
+while (counter <= 4) {
+  console.log(counter)
+  counter++
+}
+
+/// contadopr con for
+
+for (let i = 0; i <= 4; i++) {
+  console.log(i)
+}
+
+/// for in
+
+const letters = [
+  'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i'
+]
+
+for (letter in letters) {
+  console.log(letter) // esto imprime el indice de cada item
+}
+
+/// for of
+
+for (letter of letters) {
+  console.log(letter) // esto imprime el valor de cada item
+}
+
+
+// y con objetos?
+
+Object.keys(objeto)  // esto da un array con los nombres de las propiedades
+Object.entries(mascota) // esto da un array lleno de arrays con ['propiedad', 'valor'] */

@@ -14,7 +14,7 @@ console.log(saludoArray)
 // tarea : funcion que sepa si una palabra o frase es un palindromo .reverse() en la palabra con .toLowerCase()
 // funcio nque quite los espacio s de un String
 
-let word = "defied"
+let word = "deified"
 let otherWord = "Intensity"
 const phrase = "Is This The Real World?"
 
