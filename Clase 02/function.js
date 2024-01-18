@@ -42,7 +42,7 @@ const getInputs = () => {
   let input3 = parseInt(document.getElementById("num3").value);
   let resultF;
 
-  if (input1 >= input2) {
+  if (input1 >= input2 && input1 >= input3) {
     resultF = input1;
   } else if (input2 > input3) {
     resultF = input2;
@@ -165,6 +165,69 @@ const destroySpaces = () => {
   })
   return document.getElementById("noSpaceResult").innerHTML = result;
 }
+
+
+/// Largest Number in Array Finder
+let numArray = []
+
+const addToArray = () => {
+  numArray.push(parseInt(document.getElementById("numToAppend").value))
+  return document.getElementById("numArray").innerHTML = numArray
+}
+
+const findLargestNum = () => {
+  let result = Number.NEGATIVE_INFINITY;
+  for (number of numArray) {
+    if (number > result) result = number
+  }
+  return document.getElementById("largestNumResult").innerHTML = `${result} is the Largest Number in the Array`
+}
+
+/// ONLY EVENS
+const findEvens = () => {
+  let evens = [];
+  for (number of numArray) {
+    if (number % 2 === 0) evens.push(number)
+  }
+  return document.getElementById("onlyEvenResult").innerHTML = evens
+}
+
+
+/// Verificador de existencia de string dentro de arreglo
+let belly = []
+const consume = () => {
+  belly.push(document.getElementById("stringInput").value)
+  return document.getElementById("belly").innerHTML = belly
+}
+
+const checkStomach = () => {
+  let result = ''
+  let stringFood = document.getElementById("stringInput").value
+  for (food of belly) {
+    if (food == stringFood) {
+    result = true
+    } else {
+      result = false
+    }
+}
+return document.getElementById("alreadyEaten").innerHTML = result
+}
+
+/// verificar si alguna letra es mayuscula en una palabra
+
+const checkUpperCase = () => {
+  let result = false
+  let newWord = document.getElementById("inputWord").value
+  let arrayWord = newWord.split('')
+  for (letter of arrayWord) {
+    if (letter === letter.toUpperCase())
+      result = true
+  }
+  if (result == true)
+  return document.getElementById("upperCaseResult").innerHTML = `${newWord} HAS UpperCases`
+  return document.getElementById("upperCaseResult").innerHTML = `${newWord} does not have UpperCases`
+}
+
 
 
 /* /// contador con while

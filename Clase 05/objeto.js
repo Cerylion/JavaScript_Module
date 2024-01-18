@@ -28,3 +28,9 @@ console.log(wordReverse)
 
 
 //console.log(wordReverse)
+
+let numArray = []
+numArray.push(2)
+console.log(numArray)
+
+console.log(word.toUpperCase())
