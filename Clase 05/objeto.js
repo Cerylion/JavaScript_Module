@@ -10,7 +10,6 @@ console.log(saludoArray.sort())
 saludoArray.sort()
 console.log(saludoArray) */
 
-
 // tarea : funcion que sepa si una palabra o frase es un palindromo .reverse() en la palabra con .toLowerCase()
 // funcio nque quite los espacio s de un String
 /*
@@ -26,7 +25,6 @@ reverseArray.forEach(element => {
 });
 console.log(wordReverse)
 
-
 //console.log(wordReverse)
 
 let numArray = []
@@ -36,7 +34,6 @@ console.log(numArray)
 console.log(word.toUpperCase())
  */
 
-
 /* for (num of nums) {
   newNum.push(num*2)
   console.log(newNum)
@@ -44,10 +41,9 @@ console.log(word.toUpperCase())
 const nums = [1, 2, 3, 4, 5, 6, 7, 8]
 
 const doubleNum = nums.reduce((prev, curr) => {
-  prev.push(curr*2)
+  prev.push(curr * 2)
   return prev
-}, []
-)
+}, [])
 console.log(doubleNum)
 
 const double = []
