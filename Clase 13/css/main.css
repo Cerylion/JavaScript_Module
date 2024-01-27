@@ -1,0 +1,12 @@
+.coolButton {
+  transition: all 400ms ease-in-out;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px;
+}
+.coolButton:hover {
+  background-color: #5d85a0;
+  transform: scale(1.2);
+}/*# sourceMappingURL=main.css.map */
